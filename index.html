@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Главная - Soctrade</title>
+<meta name="keywords" lang="ru" content="" />
+<meta name="description" lang="ru" content="" />
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="address=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="favicon.png" type="image/x-icon" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+	<a id="buter" class="buter" style="display: block;"></a>
+	
+	<div id="mob_menu" class="first_scrn_nav_mob_wrap" style="display:none;">
+		<a id="mob_menu_close" class="first_scrn_nav_close"></a>
+		<ul class="first_scrn_nav_mob">
+			<li><span><a href="#">О компании</a></span></li>
+			<li><span><a href="#">Оборудование</a></span></li>
+			<li><span><a href="#">Производители</a></span></li>
+			<li><span><a href="#">Сервис</a></span>
+				<ul class="first_scrn_nav_mob_2lvl">
+					<li><a href="#">Общая информация</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Сотрудники</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</li>
+			<li><span><a href="#">Каталог продукции</a></span></li>
+			<li><span><a href="#">Контакты</a></span></li>
+		</ul>
+	</div>
+	
+	<div id="call_back_popup_wrap" class="call_back_popup_wrap" style="display:none;">
+		<div class="call_back_popup_wrap_bg"></div>
+		<div class="call_back_popup">
+			<a id="call_back_popup_close" class="call_back_popup_close"></a>
+			<p class="call_back_popup_title">Обратный звонок</p>
+			<p class="call_back_popup_descr">Оставьте заявку и наш специалист свяжется с Вами в ближайшее время. Спасибо!</p>
+			<form id="callbackform">
+			<input class="input_txt" type="text" id="callback_input_name" name="callback_name" placeholder="Ваше имя *" onfocus="this.placeholder='';" onblur="this.placeholder='Ваше имя *';">
+			<input class="input_txt" type="text" id="callback_input_phone" name="callback_phone"  placeholder="Телефон *" onfocus="this.placeholder='';" onblur="this.placeholder='Телефон *';">
+			<input class="input_txt" type="text" id="callback_input_email" name="callback_email"  placeholder="Email" onfocus="this.placeholder='';" onblur="this.placeholder='Email';">
+			<input type="submit" value="отправить заявку" class="call_back_popup_btn">
+			</form>
+		</div>
+	</div>
+
+	<div id="consalt_popup_wrap" class="call_back_popup_wrap" style="display:none;">
+		<div class="call_back_popup_wrap_bg"></div>
+		<div class="call_back_popup">
+			<a id="call_back_popup_close" class="call_back_popup_close"></a>
+			<p class="call_back_popup_title">Заказать консультацию</p>
+			<p class="call_back_popup_descr">Оставьте заявку и наш специалист свяжется с Вами в ближайшее время. Спасибо!</p>
+			<form id="consaltform">
+			<input class="input_txt" type="text" id="consalt_input_name" name="consalt_name" placeholder="Ваше имя *" onfocus="this.placeholder='';" onblur="this.placeholder='Ваше имя *';">
+			<input class="input_txt" type="text" id="consalt_input_phone" name="consalt_phone"  placeholder="Телефон *" onfocus="this.placeholder='';" onblur="this.placeholder='Телефон *';">
+			<input class="input_txt" type="text" id="consalt_input_email" name="consalt_email"  placeholder="Email" onfocus="this.placeholder='';" onblur="this.placeholder='Email';">
+			<textarea class="input_textarea" placeholder="Сообщение" onfocus="this.placeholder='';" onblur="this.placeholder='Сообщение';"></textarea>
+			<input type="submit" value="отправить заявку" class="call_back_popup_btn">
+			
+			</form>
+		</div>
+	</div>
+
+	<header>
+		<div class="head">
+			<div class="logo">
+				<img src="img/logo.png" alt=""/>
+			</div>
+			<div class="logo_description">
+				<span>Лабораторное&nbsp;оборудование для&nbsp;контроля&nbsp;качества&nbsp;зерна,&nbsp;муки, кормов&nbsp;и&nbsp;пищевых&nbsp;продуктов</span>
+			</div>
+			<div class="search">
+				<input type="search" placeholder="Поиск" />
+				<span></span>
+			</div>
+			<div class="head_contacts">
+				<a href="tel:81111111111">+7 (495) 111 - 11 - 11</a>
+				<a href="mailto:info@soctrade.com">info@soctrade.com</a>
+				<a href="contacts.html">г.&nbsp;Москва, ул.&nbsp;Орджоникидзе&nbsp;11</a>
+			</div>
+			<div class="head_callback">
+				<a id="callback_btn" class="btn">Заказать звонок</a>
+			</div>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html"></a></li>
+				<li><a href="company.html" class="active">О компании</a></li>
+				<li><a href="equipment.html">Оборудование</a></li>
+				<li><a href="manufacturers.html">Производители</a></li>
+				<li><a href="service.html">Сервис</a>
+					<ul class="menu_dropdown">
+						<li><a href="">Общая информация</a></li>
+						<li><a href="">Услуги</a></li>
+						<li><a href="">Сотрудники</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</li>
+				<li><a href="catalog.html">Каталог продукции</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section class="main_slider">
+		<div class="slider_asis">
+			<div>
+				<div class="slide_wrap">
+					<img src="img/slide_01.png" alt="" />
+					<h1>DA 7250 – универсальный многофункциональный экспресс-анализатор</h1>
+				</div>			
+			</div>
+			<div>
+				<div class="slide_wrap">
+					<img src="img/slide_02.png" alt="" />
+					<p>DA 7250 – универсальный многофункциональный экспресс-анализатор</p>
+				</div>			
+			</div>
+			<div>
+				<div class="slide_wrap">
+					<img src="img/slide_03.png" alt="" />
+					<p>DA 7250 – универсальный многофункциональный экспресс-анализатор</p>
+				</div>			
+			</div>
+			<div>
+				<div class="slide_wrap">
+					<img src="img/slide_04.png" alt="" />
+					<p>DA 7250 – универсальный многофункциональный экспресс-анализатор</p>
+				</div>			
+			</div>
+			<div>
+				<div class="slide_wrap">
+					<img src="img/slide_05.png" alt="" />
+					<p>DA 7250 – универсальный многофункциональный экспресс-анализатор</p>
+				</div>			
+			</div>
+		</div>
+	</section>
+	
+	<section class="main_equip_block top_50">
+		<h1>ОБОРУДОВАНИЕ ПО ОБЛАСТЯМ</h1>
+		<div class="container">
+			<div class="wrapper">
+				<div class="grid_3">
+					<div class="main_equip_block_val">
+						<a href="#"><p><img src="img/main_equip_block_val_01.png" alt="" /></p></a>
+						<a href="#">Отбор проб</a>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="main_equip_block_val">
+						<a href="#"><p><img src="img/main_equip_block_val_02.jpg" alt="" /></p></a>
+						<a href="#">Пробоподготовка</a>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="main_equip_block_val">
+						<a href="#"><p><img src="img/main_equip_block_val_03.jpg" alt="" /></p></a>
+						<a href="#">Определение влажности</a>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="main_equip_block_val">
+						<a href="#"><p><img src="img/main_equip_block_val_04.jpg" alt="" /></p></a>
+						<a href="#">Технологические свойства и реология</a>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="main_equip_block_val">
+						<a href="#"><p><img src="img/main_equip_block_val_05.jpg" alt="" /></p></a>
+						<a href="#">Химические методы</a>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="main_equip_block_val">
+						<a href="#"><p><img src="img/main_equip_block_val_06.jpg" alt="" /></p></a>
+						<a href="#">Экспресс-приборы</a>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="main_equip_block_val">
+						<a href="#"><p><img src="img/main_equip_block_val_07.png" alt="" /></p></a>
+						<a href="#">Диагностические тесты</a>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="main_equip_block_val">
+						<a href="#"><p><img src="img/main_equip_block_val_08.jpg" alt="" /></p>
+						<a href="#">Общелабораторное оборудование</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="main_man_slider top_50">
+		<h2>ПРОИЗВОДИТЕЛИ</h2>
+		<div class="man_slider_asis">
+			<div>
+				<div class="man_slide_wrap">
+					<a href="#"><img src="img/slide_02_01.png" alt="" /></a>
+				</div>			
+			</div>
+			<div>
+				<div class="man_slide_wrap">
+					<a href="#"><img src="img/slide_02_02.png" alt="" /></a>
+				</div>			
+			</div>
+			<div>
+				<div class="man_slide_wrap">
+					<a href="#"><img src="img/slide_02_03.png" alt="" /></a>
+				</div>			
+			</div>
+			<div>
+				<div class="man_slide_wrap">
+					<a href="#"><img src="img/slide_02_04.png" alt="" /></a>
+				</div>			
+			</div>
+			<div>
+				<div class="man_slide_wrap">
+					<a href="#"><img src="img/slide_02_05.png" alt="" /></a>
+				</div>			
+			</div>
+		</div>		
+	</section>
+	
+	<section class="question_or_problem_block top_50">
+		<p class="question_or_problem_block_title">Возник вопрос или проблема?</p>
+		<p class="question_or_problem_block_description">Напишите нам или закажите звонок — мы обязательно найдём решение. Внимательно изучим ваши проблемы и задачи, и уже на их основе предложим вам варианты развития, которые будут подобраны именно под вашу цель.</p>
+		<a id="consalt_btn" class="btn_invert">Заказать консультацию</a>
+	</section>
+	
+	<section class="about_company_block top_50">
+		<h2>О КОМПАНИИ</h2>
+		<div class="container top_50">
+			<p class="our_mission">Наша миссия — обеспечить точный контроль<br />качества в вашей лаборатории</p>
+			<hr />
+		
+			<div class="more_about_company_container">
+				<div class="more_about_company_descr_new top_50">
+					<h2>Что такое Lorem Ipsum?</h2>
+					<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+				</div>
+				<div class="more_about_company_descr_new hideshow">
+					<h3>Откуда он появился?</h3>
+					<p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32</p>
+					<p>Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.</p>
+					<h4>Почему он используется?</h4>
+					<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+					<h5>Где его взять?</h5>
+					<p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или "невозможных" слов.</p>
+				</div>
+				<div class="more_about_company_title top_20">
+					<p>ПОДРОБНЕЕ О КОМПАНИИ
+					<span class="more_about_company_title_arrow"><b class="down"></b></span></p>
+				</div>
+				<div class="more_about_company_descr top_50">
+					<h2>НАШИ ОБЪЕКТЫ</h2>
+					<div class="container top_50">
+						<div class="wrapper">
+							<div class="grid_4">
+								<div class="main_object_pic_cont"><p><img src="img/main_object_01.jpg" alt="" /></p></div>
+								<div class="main_object_txt_cont">
+									<p>«Амилко» Краснодарский край, пробоотборник Cobra 4000 (Премиум, 18м.)</p>
+									<p>г. Москва</p>
+								</div>
+							</div>
+							<div class="grid_4">
+								<div class="main_object_pic_cont"><p><img src="img/main_object_02.jpg" alt="" /></p></div>
+								<div class="main_object_txt_cont">
+									<p>«Амилко» Краснодарский край, автоматическая система отбора и анализа проб зерна SARA+Gestar</p>
+									<p>г. Санкт-Петербург</p>
+								</div>
+							</div>
+							<div class="grid_4">
+								<div class="main_object_pic_cont"><p><img src="img/main_object_03.jpg" alt="" /></p></div>
+								<div class="main_object_txt_cont">
+									<p>«Окская птицефабрика» автоматическая система отбора и анализа проб зерна SARA+Gestar</p>
+									<p>г. Самара</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="feedbacks top_50">
+		<h2>НАШИ ОТЗЫВЫ</h2>
+		<div class="feedbacks_slider_asis">
+			<div>
+				<div class="feedbacks_slide_wrap">
+					<hr />
+					<div class="feedbacks_slide_img_cont"><a class="zoom" name="img/otzyv_sitijenergo.jpg"><img src="img/feedback_01.jpg" alt="" /><p></p></a></div>
+					<p>ОАО «СУ-7 РиТМ»</p>
+				</div>			
+			</div>
+			<div>
+				<div class="feedbacks_slide_wrap">
+					<hr />
+					<div class="feedbacks_slide_img_cont"><a class="zoom" name="img/otzyv_sitijenergo.jpg"><img src="img/feedback_02.jpg" alt="" /><p></p></a></div>
+					<p>ООО «Ситиэнерго»</p>
+				</div>			
+			</div>
+			<div>
+				<div class="feedbacks_slide_wrap">
+					<hr />
+					<div class="feedbacks_slide_img_cont"><a class="zoom" name="img/otzyv_sitijenergo.jpg"><img src="img/feedback_03.jpg" alt="" /><p></p></a></div>
+					<p>ОАО «СУ-7 РиТМ»</p>
+				</div>			
+			</div>
+			<div>
+				<div class="feedbacks_slide_wrap">
+					<hr />
+					<div class="feedbacks_slide_img_cont"><a class="zoom" name="img/otzyv_sitijenergo.jpg"><img src="img/feedback_01.jpg" alt="" /><p></p></a></div>
+					<p>ОАО «СУ-7 РиТМ»</p>
+				</div>			
+			</div>
+			<div>
+				<div class="feedbacks_slide_wrap">
+					<hr />
+					<div class="feedbacks_slide_img_cont"><a class="zoom" name="img/otzyv_sitijenergo.jpg"><img src="img/feedback_02.jpg" alt="" /><p></p></a></div>
+					<p>ОАО «СУ-7 РиТМ»</p>
+				</div>			
+			</div>
+		</div>			
+	</section>
+	
+	<section class="main_news top_50">
+		<h2>НОВОСТИ</h2>
+		<div class="container top_50">
+			<div class="flex_news_container_1lvl">
+				<div class="flex_news_item_1lvl flex_news_item_cont news_big_block">
+					<a href="#"><div class="flex_news_1lvl_img_cont"><img src="img/news_01.jpg" alt="" /></div></a>
+					<a href="#" class="flex_news_item_title">Новинки расходных материалов для отбора проб Burkle</a>
+					<p class="flex_news_item_descr">Компания Burkle уже 70 лет специализируется на производстве</p>
+					<p class="flex_news_item_date">03 апреля 2019</p>
+				</div>
+				<div class="flex_news_item_1lvl">
+					<div class="flex_news_container_2lvl">
+						<div class="flex_news_item_2lvl flex_news_item_cont news_small_block">
+							<a href="#"><div class="flex_news_2lvl_img_cont"><img src="img/news_02.jpg" alt="" /></div></a>
+							<a href="" class="flex_news_item_title">Новинки расходных материалов для отбора проб Burkle</a>
+							<p class="flex_news_item_descr">Компания Burkle уже 70 лет специализируется на производстве</p>
+							<p class="flex_news_item_date">03 апреля 2019</p>
+						</div>
+						<div class="flex_news_item_2lvl flex_news_item_cont news_small_block">
+							<a href="#"><div class="flex_news_2lvl_img_cont"><img src="img/news_02.jpg" alt="" /></div></a>
+							<a href="" class="flex_news_item_title">Новинки расходных материалов для отбора проб Burkle</a>
+							<p class="flex_news_item_descr">Компания Burkle уже 70 лет специализируется на производстве</p>
+							<p class="flex_news_item_date">03 апреля 2019</p>
+
+						</div>
+						<div class="flex_news_item_2lvl flex_news_item_cont news_small_block">
+							<a href="#"><div class="flex_news_2lvl_img_cont"><img src="img/news_02.jpg" alt="" /></div></a>
+							<a href="" class="flex_news_item_title">Новинки расходных материалов для отбора проб Burkle</a>
+							<p class="flex_news_item_descr">Компания Burkle уже 70 лет специализируется на производстве</p>
+							<p class="flex_news_item_date">03 апреля 2019</p>
+
+						</div>
+						<div class="flex_news_item_2lvl flex_news_item_cont news_small_block">
+							<a href="#"><div class="flex_news_2lvl_img_cont"><img src="img/news_02.jpg" alt="" /></div></a>
+							<a href="" class="flex_news_item_title">Новинки расходных материалов для отбора проб Burkle</a>
+							<p class="flex_news_item_descr">Компания Burkle уже 70 лет специализируется на производстве</p>
+							<p class="flex_news_item_date">03 апреля 2019</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="btn_invert_2">СМОТРЕТЬ ВСЕ</a>
+	</section>
+	
+	<footer class="top_50">
+		<div class="container">
+			<div class="wrapper">
+				<div class="grid_3">
+					<p class="footer_block_title">Наш адрес</p>
+					<p class="footer_block_title_hr"></p>
+					<p class="footer_contacts_info">г. Москва, ул.Орджоникидзе 11, "Бизнес-парк Орджоникидзе 11", стр. 3, 3 этаж</p>
+				</div>
+				<div class="grid_3">
+					<p class="footer_block_title">Позвоните нам</p>
+					<p class="footer_block_title_hr"></p>
+					<a class="footer_contacts_info" href="tel:+74951111111">+7-(495)-111-11-11</a>
+				</div>
+				<div class="grid_3">
+					<p class="footer_block_title">Напишите нам</p>
+					<p class="footer_block_title_hr"></p>
+					<a class="footer_contacts_info" href="mailto:info@soctrade.com">info@soctrade.com</a>
+				</div>
+				<div class="grid_3">
+					<p class="footer_block_title">Мы в соцсетях</p>
+					<p class="footer_block_title_hr"></p>
+					<ul class="footer_social">
+						<li><a href="" target="_blank"><img src="img/vk_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/inst_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/fb_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/yb_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/tw_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/ok_icon.jpg"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<hr class="top_30"/>
+		<div class="container top_30">
+			<div class="wrapper">
+				<div class="grid_9">
+				<p>Все права защищены.</p>
+				<p>Вся информация носит справочный характер и не является публичной офертой (ст. 437 ГК)</p>
+				</div>
+				<div class="grid_3">
+				<p>Cайт разработан и поддерживается компанией <a href="rodzeta.ru" target="_blank">«Rodzeta»</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
