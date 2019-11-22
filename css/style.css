@@ -199,8 +199,11 @@ nav>ul li:hover .menu_dropdown li:hover a{color:#fff;}
 
 /*О Компании*/
 .about_company_block hr{height:2px;background:#51904e;width:75px;margin-top:20px;display:inline-block;}
-.more_about_company_title{background:#51904e;padding:30px 0;cursor:pointer;}
-.more_about_company_title p{text-align:center;font-family: 'Montserrat', sans-serif;font-size:24px;font-weight:400;color:#fff;position:relative;width:410px;margin:0 auto;}
+#index .more_about_company_title{background:#51904e;padding:30px 0;cursor:pointer;}
+#index .more_about_company_title p{text-align:center;font-family: 'Montserrat', sans-serif;font-size:24px;font-weight:400;color:#fff;position:relative;width:410px;margin:0 auto;}
+
+#catalog .more_about_company_title{background:#51904e;padding:30px 0;cursor:pointer;}
+#catalog .more_about_company_title p{text-align:center;font-family: 'Montserrat', sans-serif;font-size:24px;font-weight:400;color:#fff;position:relative;width:490px;margin:0 auto;}
 
 .more_about_company_title_arrow {height: 100%;position: absolute;top: 0;right: 1px;width: 20px;}
 .more_about_company_title_arrow .down{border-color: #fff transparent transparent transparent;border-style: solid;border-width: 10px 8px 0 8px;height: 0;left: 50%;margin-left: -4px;margin-top: -4px;position: absolute;top: 50%;width: 0;}
@@ -264,6 +267,20 @@ nav>ul li:hover .menu_dropdown li:hover a{color:#fff;}
 
 .main_news .btn_invert_2{display:block;width:200px;margin:30px auto 0 auto;}
 
+	/*КАТАЛОГ*/
+
+	/* --> Блок оборудования КАТАЛОГ*/
+	#catalog .main_equip_block h1 {color:#51904e;text-transform:uppercase;}
+	#catalog .main_equip_block_val {height:440px;margin-top:50px;}
+	#catalog .main_equip_block_val p {text-align:center;height:270px;overflow:hidden;}
+	#catalog .main_equip_block_val p img {width:auto;height:100%;}
+	#catalog .main_equip_block_val a {display:block;text-align:center;font-family: 'Montserrat', sans-serif;font-size:24px;line-height:28px;color:#252525;text-decoration:none;padding:10px 0;}
+	
+	/* --> Об оборудовании*/
+	.more_about_equip_block_title {font-family: 'Montserrat', sans-serif;font-size:24px;line-height:36px;font-weight:600;color:#252525;} 
+	.more_about_equip_block_descr {font-family: 'Montserrat', sans-serif;font-size:16px;line-height:24px;color:#252525;}
+	.more_about_equip hr{height:2px;background:#51904e;width:75px;margin:20px 0;display:inline-block;}
+	
 
 /*Футер*/
 footer{width:100%;padding:30px 0;background:#51904e;}
@@ -353,6 +370,7 @@ nav>ul{width:940px;}
 nav>ul>li{margin: 0 10px;}
 
 #index .main_equip_block_val p {padding:30px;box-sizing: border-box;}
+#catalog .main_equip_block_val p {padding:30px;box-sizing: border-box;}
 
 .man_slider_asis{width:812px;height:152px;}
 
@@ -422,6 +440,10 @@ nav>ul>li>a{font-size:12px;}
 #index .main_equip_block_val p {padding:30px;box-sizing: border-box;}
 #index .main_equip_block_val a{font-size:16px;line-height:24px;}
 
+#catalog .main_equip_block_val{height: 375px;}
+#catalog .main_equip_block_val p {padding:30px;box-sizing: border-box;}
+#catalog .main_equip_block_val a{font-size:16px;line-height:24px;}
+
 .man_slider_asis{width:600px;height:114px;}
 
 .main_object_pic_cont p {margin-top:-25px;}
@@ -442,6 +464,7 @@ nav>ul>li>a{font-size:12px;}
 .news_small_block .flex_news_item_date{font-size:10px;}
 
 #index .main_equip_block_val{margin-top:0;}
+#catalog .main_equip_block_val{margin-top:0;}
 
 .flex_news_1lvl_img_cont{height:320px;}
 .flex_news_2lvl_img_cont{height:170px;}
@@ -520,7 +543,11 @@ nav>ul>li>a{font-size:12px;}
 #index .main_equip_block_val p {padding:30px;box-sizing: border-box;}
 #index .main_equip_block_val a{font-size:16px;line-height:24px;}
 
-.man_slider_asis{width:360px;height:100px;}
+#catalog .main_equip_block_val{height: 375px;}
+#catalog .main_equip_block_val p {padding:30px;box-sizing: border-box;}
+#catalog .main_equip_block_val a{font-size:16px;line-height:24px;}
+
+.man_slider_asis{width:360px;height:137px;}
 .man_slider_asis .slick-next,.man_slider_asis .slick-prev{width:18px;height:18px;margin-top:-9px;}
 .man_slider_asis .slick-prev{left:-35px;}
 .man_slider_asis .slick-next{right:-35px;}
@@ -528,7 +555,8 @@ nav>ul>li>a{font-size:12px;}
 .question_or_problem_block_title{line-height:60px;padding:30px 0;}
 .question_or_problem_block_description{width:100%;}
 
-.more_about_company_title p{font-size:21px;width: 380px;}
+#index .more_about_company_title p{font-size:21px;width: 380px;}
+#catalog .more_about_company_title p{font-size:21px;width: 380px;}
 
 .main_object_pic_cont p {margin-top:-25px;}
 .main_object_pic_cont p img{width:260px;margin-left:-130px;}
@@ -552,6 +580,7 @@ nav>ul>li>a{font-size:12px;}
 
 
 #index .main_equip_block_val{margin-top:0;}
+#catalog .main_equip_block_val{margin-top:0;}
 
 .flex_news_1lvl_img_cont{height:auto;}
 .flex_news_2lvl_img_cont{height:auto;}
@@ -574,13 +603,17 @@ h5{font-family: 'Montserrat', sans-serif;font-weight:400;font-size:16px;text-ali
 #index .main_equip_block_val{height:auto;}
 #index .main_equip_block_val p{padding:10px;}
 
+#catalog .main_equip_block_val{height:auto;}
+#catalog .main_equip_block_val p{padding:10px;}
+
 .question_or_problem_block{padding:0 30px;}
 .question_or_problem_block_title{font-size:30px;line-height:45px;}
 .question_or_problem_block_description{font-size:18px;line-height:27px;}
 .question_or_problem_block .btn_invert{width:100%;box-sizing:border-box;}
 .question_or_problem_block .btn_invert{font-size:16px;padding:10px 20px;}
 
-.more_about_company_title p{width:90%;}
+#index .more_about_company_title p{width:90%;}
+#catalog .more_about_company_title p{width:90%;font-size:19px;}
 .main_object_pic_cont{margin-top: 40px;}
 
 .man_slider_asis, .feedbacks_slider_asis{width:100%;}
