@@ -92,6 +92,7 @@ h5{font-family: 'Montserrat', sans-serif;font-weight:400;font-size:28px;text-ali
 .btn{font-family: 'Montserrat', sans-serif;font-size:14px;font-weight:600;color:#fff;text-decoration:none;text-transform:uppercase;background:#51904e;padding:20px 40px;cursor:pointer;text-align:center;}
 .btn_invert{font-family: 'Montserrat', sans-serif;font-size:14px;font-weight:600;color:#fff;text-decoration:none;text-transform:uppercase;border:3px solid #51904e;background:transparent;padding:20px 40px;cursor:pointer;text-align:center;}
 .btn_invert_2{font-family: 'Montserrat', sans-serif;font-size:14px;font-weight:600;color:#51904e;text-decoration:none;text-transform:uppercase;border:3px solid #51904e;background:transparent;padding:20px 40px;cursor:pointer;text-align:center;}
+.btn_black{font-family: 'Montserrat', sans-serif;font-size:14px;font-weight:600;color:#252525;text-decoration:none;text-transform:uppercase;border:3px solid #252525;background:transparent;padding:20px 40px;cursor:pointer;text-align:center;}
 
 .grid_0, .grid_1, .grid_2, .grid_2_4, .grid_2_5, .grid_3, .grid_3_2, .grid_4, .grid_4_slider, .grid_4_features, .grid_4_features_fix, .grid_5, .grid_6, .grid_6_1, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12{display:inline;float:left;position:relative;}
 
@@ -268,6 +269,13 @@ nav>ul li:hover .menu_dropdown li:hover a{color:#fff;}
 .main_news .btn_invert_2{display:block;width:200px;margin:30px auto 0 auto;}
 
 	/*КАТАЛОГ*/
+	
+	/*Breadcrumbs*/
+	.breadcrumbs ul{list-style:none;}
+	.breadcrumbs ul li{background:#51904e;border:1px solid #51904e;padding:5px 10px;display:inline-block;box-sizing:border-box;}
+	.breadcrumbs ul li.active{background:transparent;}
+	.breadcrumbs ul li a{font-family: 'Montserrat', sans-serif;font-size:16px;font-weight:400;color:#fff;text-decoration:none;text-align:center;display:block;}
+	.breadcrumbs ul li.active a{color:#252525;}
 
 	/* --> Блок оборудования КАТАЛОГ*/
 	#catalog .main_equip_block h1 {color:#51904e;text-transform:uppercase;}
@@ -281,7 +289,32 @@ nav>ul li:hover .menu_dropdown li:hover a{color:#fff;}
 	.more_about_equip_block_descr {font-family: 'Montserrat', sans-serif;font-size:16px;line-height:24px;color:#252525;}
 	.more_about_equip hr{height:2px;background:#51904e;width:75px;margin:20px 0;display:inline-block;}
 	
-
+	/* --> Производители*/
+	.manufacturers_block{border:1px solid #d7dada;margin-top:20px;padding:20px 0;box-sizing:border-box;}
+	.manufacturers_img {width:42%;}
+	.manufacturers_img img{width:100%;}
+	.manufacturers_info {width:57%;}
+	.manufacturers_info hr{height:2px;background:#51904e;width:75px;margin-bottom:10px;display:inline-block;}
+	.manufacturers_info a{font-family: 'Montserrat', sans-serif;font-size:16px;line-height:24px;font-weight:400;color:#205dea;display:block;text-decoration:none;}
+	.manufacturers_img, .manufacturers_info {display:inline-block;vertical-align:middle;}
+	
+	.manufacturers_info_title{font-family: 'Montserrat', sans-serif;font-size:16px;line-height:24px;font-weight:600;color:#252525;}
+	.manufacturers_info_descr{font-family: 'Montserrat', sans-serif;font-size:16px;line-height:24px;font-weight:400;color:#252525;}
+	
+		/* --> Производитель*/
+		.manufacturer_logo {padding-right:10px;}
+		.manufacturer_logo img{width:100%}
+		.manufacturer_title{font-family: 'Montserrat', sans-serif;font-size:40px;line-height:40px;font-weight:600;color:#252525;text-transform:uppercase;}
+		.manufacturer_descr{font-family: 'Montserrat', sans-serif;font-size:20px;line-height:30px;font-weight:400;color:#252525;}
+		.manufacturer_descr a{text-decoration:none;color:#51904e;}
+		.manufacturer_cont .btn_invert_2{display:block;width:250px;font-size:14px;padding:10px;border:1px solid #51904e;margin-top:5px;}
+		.manufacturer_cont .btn_black{display:block;font-size:14px;padding:5px;border:1px solid #252525;margin-top:5px;}
+		
+		.manufacturer_desc h2{margin-bottom:20px;}
+		.manufacturer_desc p{font-family: 'Montserrat', sans-serif;font-size:24px;line-height:40px;font-weight:400;margin-bottom:20px;}
+		.manufacturer_desc img{margin-bottom:20px;}
+	
+	
 /*Футер*/
 footer{width:100%;padding:30px 0;background:#51904e;}
 footer hr{height:1px;background:#fff;margin:0 auto;display:block;}
@@ -388,6 +421,7 @@ nav>ul>li{margin: 0 10px;}
 .news_small_block .flex_news_item_title{font-size:12px;height:31px;}
 .news_small_block .flex_news_item_descr{font-size:10px;}
 .news_small_block .flex_news_item_date{font-size:10px;}
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 979px) {
@@ -470,13 +504,20 @@ nav>ul>li>a{font-size:12px;}
 .flex_news_2lvl_img_cont{height:170px;}
 
 .footer_contacts_info{margin-bottom:20px;display:block;}
+
+.manufacturers_block{width:97%;}
+
+.breadcrumbs ul li{width:30%;}
+.breadcrumbs ul li a{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+
+.manufacturer_cont .btn_invert_2, .manufacturer_cont .btn_black{width:250px;padding:10px;box-sizing:border-box;}
 }
 
 @media screen and (max-width: 767px) {
 .container{width:100%;margin-left:auto;margin-right:auto;overflow:hidden;padding:0 30px;box-sizing:border-box;}
 .wrapper{width:100%; overflow:hidden;}
 .grid_1{width:100%;}
-.grid_2{width:104px;}
+.grid_2{width:100%;}
 .grid_3{width:100%;}
 .grid_4{width:100%;}
 .grid_5{width:100%;}
@@ -586,6 +627,11 @@ nav>ul>li>a{font-size:12px;}
 .flex_news_2lvl_img_cont{height:auto;}
 
 .footer_contacts_info{margin-bottom:20px;display:block;}
+
+.breadcrumbs ul li{width:30%;}
+.breadcrumbs ul li a{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+
+.manufacturer_cont .btn_invert_2, .manufacturer_cont .btn_black{width:100%;padding:10px;box-sizing:border-box;}
 }
 
 @media screen and (max-width: 480px) {
@@ -617,5 +663,8 @@ h5{font-family: 'Montserrat', sans-serif;font-weight:400;font-size:16px;text-ali
 .main_object_pic_cont{margin-top: 40px;}
 
 .man_slider_asis, .feedbacks_slider_asis{width:100%;}
+
+.manufacturers_img, .manufacturers_info{width:100%;}
+.manufacturers_info{padding:0 30px;box-sizing:border-box;}
 
 }
