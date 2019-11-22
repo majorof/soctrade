@@ -176,13 +176,13 @@ nav>ul li:hover .menu_dropdown li:hover a{color:#fff;}
 .main_slider .slide_wrap p, .main_slider .slide_wrap h1 {position:absolute;top:0;font-family: 'Montserrat', sans-serif;font-size:44px;font-weight:500;line-height:66px;color:#51904e;text-align:center;width:600px;height:270px;top:50%;margin-top:-135px;left:40%;}
 
 /*Блок оборудования на главной*/
-.main_equip_block_val {height:360px;margin-top:50px;}
-.main_equip_block_val p {text-align:center;height:270px;overflow:hidden;}
-.main_equip_block_val p img {width:auto;height:100%;}
-.main_equip_block_val a {display:block;text-align:center;font-family: 'Montserrat', sans-serif;font-size:24px;line-height:28px;color:#252525;text-decoration:none;padding:10px 0;}
+#index .main_equip_block_val {height:360px;margin-top:50px;}
+#index .main_equip_block_val p {text-align:center;height:270px;overflow:hidden;}
+#index .main_equip_block_val p img {width:auto;height:100%;}
+#index .main_equip_block_val a {display:block;text-align:center;font-family: 'Montserrat', sans-serif;font-size:24px;line-height:28px;color:#252525;text-decoration:none;padding:10px 0;}
 
 /*Slider 2*/
-.man_slider_asis {width:1220px;margin:50px auto 0 auto;height:200px;}
+.man_slider_asis {width:1220px;margin:50px auto 0 auto;height:226px;}
 .man_slide_wrap {vertical-align:middle;text-align:center;border:1px solid #f0f0f0;}
 .man_slide_wrap a{display:block;height:100%;text-align:center;}
 .man_slide_wrap img{width:100%;}
@@ -352,7 +352,7 @@ nav>ul>li{margin: 0 30px;}
 nav>ul{width:940px;}
 nav>ul>li{margin: 0 10px;}
 
-.main_equip_block_val p {padding:30px;box-sizing: border-box;}
+#index .main_equip_block_val p {padding:30px;box-sizing: border-box;}
 
 .man_slider_asis{width:812px;height:152px;}
 
@@ -418,9 +418,9 @@ nav>ul>li>a{font-size:12px;}
 
 .main_slider .slide_wrap p, .main_slider .slide_wrap h1{left:0;width:100%;}
 
-.main_equip_block_val{height: 375px;}
-.main_equip_block_val p {padding:30px;box-sizing: border-box;}
-.main_equip_block_val a{font-size:16px;line-height:24px;}
+#index .main_equip_block_val{height: 375px;}
+#index .main_equip_block_val p {padding:30px;box-sizing: border-box;}
+#index .main_equip_block_val a{font-size:16px;line-height:24px;}
 
 .man_slider_asis{width:600px;height:114px;}
 
@@ -441,7 +441,7 @@ nav>ul>li>a{font-size:12px;}
 .news_small_block .flex_news_item_descr{font-size:10px;}
 .news_small_block .flex_news_item_date{font-size:10px;}
 
-.main_equip_block_val{margin-top:0;}
+#index .main_equip_block_val{margin-top:0;}
 
 .flex_news_1lvl_img_cont{height:320px;}
 .flex_news_2lvl_img_cont{height:170px;}
@@ -516,9 +516,9 @@ nav>ul>li>a{font-size:12px;}
 
 .main_slider .slide_wrap p, .main_slider .slide_wrap h1{left:0;width:100%;font-size:36px;}
 
-.main_equip_block_val{height: 375px;}
-.main_equip_block_val p {padding:30px;box-sizing: border-box;}
-.main_equip_block_val a{font-size:16px;line-height:24px;}
+#index .main_equip_block_val{height: 375px;}
+#index .main_equip_block_val p {padding:30px;box-sizing: border-box;}
+#index .main_equip_block_val a{font-size:16px;line-height:24px;}
 
 .man_slider_asis{width:360px;height:100px;}
 .man_slider_asis .slick-next,.man_slider_asis .slick-prev{width:18px;height:18px;margin-top:-9px;}
@@ -551,7 +551,7 @@ nav>ul>li>a{font-size:12px;}
 .news_small_block .flex_news_item_descr{font-family: 'Montserrat', sans-serif;font-size:16px;font-weight:400;color:#000;width:70%;margin-top:20px;height:auto;}
 
 
-.main_equip_block_val{margin-top:0;}
+#index .main_equip_block_val{margin-top:0;}
 
 .flex_news_1lvl_img_cont{height:auto;}
 .flex_news_2lvl_img_cont{height:auto;}
@@ -571,8 +571,8 @@ h5{font-family: 'Montserrat', sans-serif;font-weight:400;font-size:16px;text-ali
 
 .head_callback{display:none;}
 
-.main_equip_block_val{height:auto;}
-.main_equip_block_val p{padding:10px;}
+#index .main_equip_block_val{height:auto;}
+#index .main_equip_block_val p{padding:10px;}
 
 .question_or_problem_block{padding:0 30px;}
 .question_or_problem_block_title{font-size:30px;line-height:45px;}
