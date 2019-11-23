@@ -352,7 +352,7 @@ nav>ul li:hover .menu_dropdown li:hover a{color:#fff;}
 	.products_secondary_block ul li{display:inline-block;width:48%;vertical-align:top;}
 	.products_secondary_block ul li:first-child{margin-right:2%;}
 	
-	.products_secondary_block .btn{display:block;width:60px;}
+	.products_secondary_block .btn{display:block;width:70px;}
 	.products_secondary_block p:first-child{font-size:28px;line-height:42px;font-weight:600;max-height:85px;overflow:hidden;}
 	.products_secondary_block p:nth-child(2){max-height:230px;overflow:hidden;}
 	.products_secondary_block p{font-family: 'Montserrat', sans-serif;font-size:22px;line-height:33px;font-weight:400;color:#252525;margin-bottom:20px;}
