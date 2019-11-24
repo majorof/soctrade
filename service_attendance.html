@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Услуги - Soctrade</title>
+<meta name="keywords" lang="ru" content="" />
+<meta name="description" lang="ru" content="" />
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="address=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="favicon.png" type="image/x-icon" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body id="attendance">
+
+	<a id="buter" class="buter" style="display: block;"></a>
+	
+	<div id="mob_menu" class="first_scrn_nav_mob_wrap" style="display:none;">
+		<a id="mob_menu_close" class="first_scrn_nav_close"></a>
+		<ul class="first_scrn_nav_mob">
+			<li><span><a href="#">О компании</a></span></li>
+			<li><span><a href="#">Оборудование</a></span></li>
+			<li><span><a href="#">Производители</a></span></li>
+			<li><span><a href="#">Сервис</a></span>
+				<ul class="first_scrn_nav_mob_2lvl">
+					<li><a href="#">Общая информация</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Сотрудники</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</li>
+			<li><span><a href="#">Каталог продукции</a></span></li>
+			<li><span><a href="#">Контакты</a></span></li>
+		</ul>
+	</div>
+	
+	<div id="call_back_popup_wrap" class="call_back_popup_wrap" style="display:none;">
+		<div class="call_back_popup_wrap_bg"></div>
+		<div class="call_back_popup">
+			<a id="call_back_popup_close" class="call_back_popup_close"></a>
+			<p class="call_back_popup_title">Обратный звонок</p>
+			<p class="call_back_popup_descr">Оставьте заявку и наш специалист свяжется с Вами в ближайшее время. Спасибо!</p>
+			<form id="callbackform">
+			<input class="input_txt" type="text" id="callback_input_name" name="callback_name" placeholder="Ваше имя *" onfocus="this.placeholder='';" onblur="this.placeholder='Ваше имя *';">
+			<input class="input_txt" type="text" id="callback_input_phone" name="callback_phone"  placeholder="Телефон *" onfocus="this.placeholder='';" onblur="this.placeholder='Телефон *';">
+			<input class="input_txt" type="text" id="callback_input_email" name="callback_email"  placeholder="Email" onfocus="this.placeholder='';" onblur="this.placeholder='Email';">
+			<input type="submit" value="отправить заявку" class="call_back_popup_btn">
+			</form>
+		</div>
+	</div>
+
+	<div id="consalt_popup_wrap" class="call_back_popup_wrap" style="display:none;">
+		<div class="call_back_popup_wrap_bg"></div>
+		<div class="call_back_popup">
+			<a id="call_back_popup_close" class="call_back_popup_close"></a>
+			<p class="call_back_popup_title">Заказать консультацию</p>
+			<p class="call_back_popup_descr">Оставьте заявку и наш специалист свяжется с Вами в ближайшее время. Спасибо!</p>
+			<form id="consaltform">
+			<input class="input_txt" type="text" id="consalt_input_name" name="consalt_name" placeholder="Ваше имя *" onfocus="this.placeholder='';" onblur="this.placeholder='Ваше имя *';">
+			<input class="input_txt" type="text" id="consalt_input_phone" name="consalt_phone"  placeholder="Телефон *" onfocus="this.placeholder='';" onblur="this.placeholder='Телефон *';">
+			<input class="input_txt" type="text" id="consalt_input_email" name="consalt_email"  placeholder="Email" onfocus="this.placeholder='';" onblur="this.placeholder='Email';">
+			<textarea class="input_textarea" placeholder="Сообщение" onfocus="this.placeholder='';" onblur="this.placeholder='Сообщение';"></textarea>
+			<input type="submit" value="отправить заявку" class="call_back_popup_btn">
+			
+			</form>
+		</div>
+	</div>
+
+	<header>
+		<div class="head">
+			<div class="logo">
+				<img src="img/logo.png" alt=""/>
+			</div>
+			<div class="logo_description">
+				<span>Лабораторное&nbsp;оборудование для&nbsp;контроля&nbsp;качества&nbsp;зерна,&nbsp;муки, кормов&nbsp;и&nbsp;пищевых&nbsp;продуктов</span>
+			</div>
+			<div class="search">
+				<input type="search" placeholder="Поиск" />
+				<span></span>
+			</div>
+			<div class="head_contacts">
+				<a href="tel:81111111111">+7 (495) 111 - 11 - 11</a>
+				<a href="mailto:info@soctrade.com">info@soctrade.com</a>
+				<a href="contacts.html">г.&nbsp;Москва, ул.&nbsp;Орджоникидзе&nbsp;11</a>
+			</div>
+			<div class="head_callback">
+				<a id="callback_btn" class="btn">Заказать звонок</a>
+			</div>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html"></a></li>
+				<li><a href="company.html">О компании</a></li>
+				<li><a href="catalog.html">Оборудование</a></li>
+				<li><a href="manufacturers.html">Производители</a></li>
+				<li><a href="service.html" class="active">Сервис</a>
+					<ul class="menu_dropdown">
+						<li><a href="">Общая информация</a></li>
+						<li><a href="">Услуги</a></li>
+						<li><a href="">Сотрудники</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</li>
+				<li><a href="products.html">Каталог продукции</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="container top_50">
+		<h1>УСЛУГИ</h1>
+	</div>
+	
+	<section class="service_block attendance top_50">
+		<div class="container">
+			<div class="wrapper">
+				<div class="grid_6">
+					<img src="img/service_attendance_pic_01.jpg" alt="" />
+				</div>
+				<div class="grid_6">
+					<img src="img/service_attendance_pic_01.jpg" alt="" />
+				</div>		
+			</div>
+			<a href="" class="btn_invert_2">Скачать каталог</a>
+		</div>
+	</section>
+	
+	<footer class="top_50">
+		<div class="container">
+			<div class="wrapper">
+				<div class="grid_3">
+					<p class="footer_block_title">Наш адрес</p>
+					<p class="footer_block_title_hr"></p>
+					<p class="footer_contacts_info">г. Москва, ул.Орджоникидзе 11, "Бизнес-парк Орджоникидзе 11", стр. 3, 3 этаж</p>
+				</div>
+				<div class="grid_3">
+					<p class="footer_block_title">Позвоните нам</p>
+					<p class="footer_block_title_hr"></p>
+					<a class="footer_contacts_info" href="tel:+74951111111">+7-(495)-111-11-11</a>
+				</div>
+				<div class="grid_3">
+					<p class="footer_block_title">Напишите нам</p>
+					<p class="footer_block_title_hr"></p>
+					<a class="footer_contacts_info" href="mailto:info@soctrade.com">info@soctrade.com</a>
+				</div>
+				<div class="grid_3">
+					<p class="footer_block_title">Мы в соцсетях</p>
+					<p class="footer_block_title_hr"></p>
+					<ul class="footer_social">
+						<li><a href="" target="_blank"><img src="img/vk_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/inst_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/fb_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/yb_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/tw_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/ok_icon.jpg"></a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<hr class="top_30"/>
+		<div class="container top_30">
+			<div class="wrapper">
+				<div class="grid_9">
+					<p>Все права защищены.</p>
+					<p>Вся информация носит справочный характер и не является публичной офертой (ст. 437 ГК)</p>
+				</div>
+				<div class="grid_3">
+					<p>Cайт разработан и поддерживается компанией <a href="rodzeta.ru" target="_blank">«Rodzeta»</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

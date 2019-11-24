@@ -357,6 +357,34 @@ nav>ul li:hover .menu_dropdown li:hover a{color:#fff;}
 	.products_secondary_block p:nth-child(2){max-height:230px;overflow:hidden;}
 	.products_secondary_block p{font-family: 'Montserrat', sans-serif;font-size:22px;line-height:33px;font-weight:400;color:#252525;margin-bottom:20px;}
 	
+	/*Сервис*/
+	.service_block h2{font-family: 'Montserrat', sans-serif;font-size:34px;line-height:51px;font-weight:600;color:#252525;margin-bottom:20px;text-align:left;}
+	.service_block p{font-family: 'Montserrat', sans-serif;font-size:24px;line-height:36px;font-weight:400;color:#252525;margin-bottom:20px;text-align:left;}
+	.service_block ul{font-family: 'Montserrat', sans-serif;font-size:24px;line-height:36px;font-weight:400;color:#252525;margin-bottom:20px;text-align:left;}
+	
+	.attendance img{width:100%;}
+	.attendance .btn_invert_2{display:block;width:160px;margin: 50px auto 0 auto;}
+
+	.staff img{height:100%;width:100%;}
+	.staff ul{list-style:none;}
+	.staff ul.first_lvl li{display:inline-block;width:48%;vertical-align:top;}
+	.staff ul.second_lvl li{display:block;width:100%;vertical-align:top;}
+	.staff ul.first_lvl li:first-child{margin-right:2%;}
+	
+	.staff p:first-child{font-size:28px;line-height:42px;font-weight:600;max-height:85px;overflow:hidden;}
+	.staff p:nth-child(2){max-height:230px;overflow:hidden;}
+	.staff p{font-family: 'Montserrat', sans-serif;font-size:22px;line-height:33px;font-weight:400;color:#252525;margin-bottom:20px;}	
+	
+	.service_contacts .container>div {width:100%;box-sizing:border-box;border-left:8px solid #51904e;border-top:2px solid #d5d8d8;border-right:2px solid #d5d8d8;border-bottom:2px solid #d5d8d8;padding:130px;}
+	.service_contacts .container div ul{list-style:none;}
+	.service_contacts .container div ul li{display:inline-block;vertical-align:middle;margin:10px 0;}
+	.service_contacts .container div ul li div{display:inline-block;vertical-align:middle;}
+	.service_contacts .container div ul li div:first-child{width:48px;margin-right:10px;text-align:center;}
+	.service_contacts .container div ul li:nth-child(odd) div:last-child{width:500px;}
+	.service_contacts .container div ul li:nth-child(even) div:last-child{width:300px;}
+	.service_contacts .container div ul li img, .service_contacts .container div ul li span{vertical-align:middle;}
+	.service_contacts .container div ul li:nth-child(odd){width:54%;margin-right:5%;}
+	.service_contacts .container div ul li:nth-child(even){width:39%}
 	
 /*Футер*/
 footer{width:100%;padding:30px 0;background:#51904e;}
@@ -415,6 +443,10 @@ nav>ul>li{margin: 0 30px;}
 .news_small_block .flex_news_item_descr{font-size:10px;}
 .news_small_block .flex_news_item_date{font-size:10px;}
 
+.service_contacts .container>div{padding:40px;}
+.service_contacts .container div ul li:nth-child(odd) div:last-child{width:400px;}
+.service_contacts .container div ul li:nth-child(even) div:last-child{width:270px;}
+
 }
 
 @media screen and (min-width: 980px) and (max-width: 1169px) {
@@ -465,6 +497,9 @@ nav>ul>li{margin: 0 10px;}
 .news_small_block .flex_news_item_descr{font-size:10px;}
 .news_small_block .flex_news_item_date{font-size:10px;}
 
+.service_contacts .container>div{padding:40px;}
+.service_contacts .container div ul li:nth-child(odd) div:last-child{width:400px;}
+.service_contacts .container div ul li:nth-child(even) div:last-child{width:270px;}
 
 }
 
@@ -573,6 +608,13 @@ nav>ul>li>a{font-size:12px;}
 #products .feedbacks_slide_img_cont {height: auto;}
 .products_secondary_block ul li{width:47%;}
 .products_main_block p{font-size:22px;}
+
+.service_contacts .container>div{padding:10px;}
+
+.service_contacts .container div ul li:nth-child(odd) div:last-child{width:310px;}
+.service_contacts .container div ul li:nth-child(even) div:last-child{width:210px;}
+
+.service_block ul{font-size:18px;}
 }
 
 @media screen and (max-width: 767px) {
@@ -709,6 +751,12 @@ nav>ul>li>a{font-size:12px;}
 .contacts_block>ul>li{padding:20px 30px;}
 
 .feedbacks_slide_img_cont{height:auto;}
+
+.service_contacts .container div ul li:nth-child(odd){width:100%;}
+.service_contacts .container div ul li:nth-child(odd) div:last-child{width:100%;}
+.service_contacts .container div ul li:nth-child(even) div:last-child{width:100%;}
+.service_contacts .container>div{padding:50px;}
+.service_contacts .container div ul li div:first-child{display:none;}
 }
 
 @media screen and (max-width: 480px) {
@@ -757,5 +805,10 @@ h5{font-family: 'Montserrat', sans-serif;font-weight:400;font-size:16px;text-ali
 .contacts_block>ul>li{padding:20px 30px;}
 
 .products_secondary_block ul li{width:100%;}
+.staff ul.first_lvl li, .staff ul li{width:100%;}
 
+.service_block h2{font-family: 'Montserrat', sans-serif;font-size:22px;line-height:33px;font-weight:600;color:#252525;margin-bottom:20px;text-align:left;}
+
+.service_contacts .container>div{padding:30px;}
+.service_block ul{font-size:16px;}
 }
