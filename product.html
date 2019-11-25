@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Продукт - Soctrade</title>
+<meta name="keywords" lang="ru" content="" />
+<meta name="description" lang="ru" content="" />
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="address=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="favicon.png" type="image/x-icon" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body id="product">
+
+	<a id="buter" class="buter" style="display: block;"></a>
+	
+	<div id="mob_menu" class="first_scrn_nav_mob_wrap" style="display:none;">
+		<a id="mob_menu_close" class="first_scrn_nav_close"></a>
+		<ul class="first_scrn_nav_mob">
+			<li><span><a href="#">О компании</a></span></li>
+			<li><span><a href="#">Оборудование</a></span></li>
+			<li><span><a href="#">Производители</a></span></li>
+			<li><span><a href="#">Сервис</a></span>
+				<ul class="first_scrn_nav_mob_2lvl">
+					<li><a href="#">Общая информация</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Сотрудники</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</li>
+			<li><span><a href="#">Каталог продукции</a></span></li>
+			<li><span><a href="#">Контакты</a></span></li>
+		</ul>
+	</div>
+	
+	<div id="call_back_popup_wrap" class="call_back_popup_wrap" style="display:none;">
+		<div class="call_back_popup_wrap_bg"></div>
+		<div class="call_back_popup">
+			<a id="call_back_popup_close" class="call_back_popup_close"></a>
+			<p class="call_back_popup_title">Обратный звонок</p>
+			<p class="call_back_popup_descr">Оставьте заявку и наш специалист свяжется с Вами в ближайшее время. Спасибо!</p>
+			<form id="callbackform">
+			<input class="input_txt" type="text" id="callback_input_name" name="callback_name" placeholder="Ваше имя *" onfocus="this.placeholder='';" onblur="this.placeholder='Ваше имя *';">
+			<input class="input_txt" type="text" id="callback_input_phone" name="callback_phone"  placeholder="Телефон *" onfocus="this.placeholder='';" onblur="this.placeholder='Телефон *';">
+			<input class="input_txt" type="text" id="callback_input_email" name="callback_email"  placeholder="Email" onfocus="this.placeholder='';" onblur="this.placeholder='Email';">
+			<input type="submit" value="отправить заявку" class="call_back_popup_btn">
+			</form>
+		</div>
+	</div>
+
+	<div id="consalt_popup_wrap" class="call_back_popup_wrap" style="display:none;">
+		<div class="call_back_popup_wrap_bg"></div>
+		<div class="call_back_popup">
+			<a id="call_back_popup_close" class="call_back_popup_close"></a>
+			<p class="call_back_popup_title">Заказать консультацию</p>
+			<p class="call_back_popup_descr">Оставьте заявку и наш специалист свяжется с Вами в ближайшее время. Спасибо!</p>
+			<form id="consaltform">
+			<input class="input_txt" type="text" id="consalt_input_name" name="consalt_name" placeholder="Ваше имя *" onfocus="this.placeholder='';" onblur="this.placeholder='Ваше имя *';">
+			<input class="input_txt" type="text" id="consalt_input_phone" name="consalt_phone"  placeholder="Телефон *" onfocus="this.placeholder='';" onblur="this.placeholder='Телефон *';">
+			<input class="input_txt" type="text" id="consalt_input_email" name="consalt_email"  placeholder="Email" onfocus="this.placeholder='';" onblur="this.placeholder='Email';">
+			<textarea class="input_textarea" placeholder="Сообщение" onfocus="this.placeholder='';" onblur="this.placeholder='Сообщение';"></textarea>
+			<input type="submit" value="отправить заявку" class="call_back_popup_btn">
+			
+			</form>
+		</div>
+	</div>
+
+	<header>
+		<div class="head">
+			<div class="logo">
+				<img src="img/logo.png" alt=""/>
+			</div>
+			<div class="logo_description">
+				<span>Лабораторное&nbsp;оборудование для&nbsp;контроля&nbsp;качества&nbsp;зерна,&nbsp;муки, кормов&nbsp;и&nbsp;пищевых&nbsp;продуктов</span>
+			</div>
+			<div class="search">
+				<input type="search" placeholder="Поиск" />
+				<span></span>
+			</div>
+			<div class="head_contacts">
+				<a href="tel:81111111111">+7 (495) 111 - 11 - 11</a>
+				<a href="mailto:info@soctrade.com">info@soctrade.com</a>
+				<a href="contacts.html">г.&nbsp;Москва, ул.&nbsp;Орджоникидзе&nbsp;11</a>
+			</div>
+			<div class="head_callback">
+				<a id="callback_btn" class="btn">Заказать звонок</a>
+			</div>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html"></a></li>
+				<li><a href="company.html">О компании</a></li>
+				<li><a href="catalog.html" class="active">Оборудование</a></li>
+				<li><a href="manufacturers.html">Производители</a></li>
+				<li><a href="service.html">Сервис</a>
+					<ul class="menu_dropdown">
+						<li><a href="">Общая информация</a></li>
+						<li><a href="">Услуги</a></li>
+						<li><a href="">Сотрудники</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</li>
+				<li><a href="products.html">Каталог продукции</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="product top_50">
+		<div class="container">
+			<div class="wrapper">
+				<div class="grid_9">
+					<h1>Инфраматик 9500 БИК анализатор зерна</h1>
+				</div>
+				<div class="grid_2">
+					<a class="btn_black" href="manufacturers.html">Вернуться в каталог</a>
+				</div>
+				<div class="grid_6 top_50">
+					<div class="product_img"><img src="img/product_01.jpg" alt="" /></div>
+				</div>
+				<div class="grid_6 top_50">
+					<div class="product_info">
+						<p>Производитель: Perten</p>
+						<p>Соответствие стандартам: ГОСТ Р 51415-99, ICC 121, AACC 54-30A, ISO 27971, ISO 5530/4</p>
+						<p>Это надежный и прочный прибор, сконструированный в соответствии с требованиями при работе с зерном и анализирует широкий спектр зерновых и масличных культур на такие показатели, как содержание влаги, белка, масла и многих других, менее чем за одну минуту.</p>
+						<a href="" class="btn">ЗАДАТЬ ВОПРОС</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="product_characters top_50">	
+		<div class="container">
+			<ul class="product_tabs">
+				<li class="active">Основная информация</li>
+				<li>Преимущества</li>
+				<li>Технические характеристики</li>
+				<li>Публикации и брошюры</li>
+				<li>Видео</li>
+				<li>Другое</li>
+			</ul>
+			
+			<div class="product_characters_val open top_50">
+				<p class="product_characters_val_title">Самый современный и точный анализатор зерна, доступный на данный момент</p>
+				
+				<p class="product_characters_val_descr">Пертен Инструментс является компанией номер один в анализе качества зерна и выпускает анализаторы зерна, работающие в ближнем инфракрасном диапазоне, в течение 30 лет. Инфраматик 9500 является последним представителем серии Инфраматик на сегодня, и предлагает лучшую точность, доступную на данный момент.</p>
+				
+				<p class="product_characters_val_descr">Это надежный и прочный прибор, сконструированный в соответствии с требованиями при работе с зерном и анализирует широкий спектр зерновых и масличных культур на такие показатели, как содержание влаги, белка, масла и многих других, менее чем за одну минуту.</p>
+			</div>
+			<div class="product_characters_val top_50">
+				<div class="wrapper">
+					<div class="grid_6">
+						<p class="product_characters_val_title">Точность</p>
+						<p class="product_characters_val_descr">Инфраматик 9500 был совмещает в себе современную электронику и высочайшую точность оптических компонентов, что гарантирует наилучшее возможное качество данных. В сочетании с использованием передовых методов хемометрики, результат анализа обладает беспрецедентной точностью. Стабильная работа оптических компонентов и надежность существующих калибровок гарантирует, что вы всегда будете получать высокоточные и качественные результаты.</p>
+						<p class="product_characters_val_title top_20">Надежность</p>
+						<p class="product_characters_val_descr">Прочная конструкция Инфраматик 9500 включает в себя полностью герметичный корпус, комплект стандартизированных компонентов, что гарантирует долгосрочную надежность и минимизирует техническое обслуживания.</p>
+						<p class="product_characters_val_title top_20">Заменяемость</p>
+						<p class="product_characters_val_descr">Корпус для оптики выполнен из цельного куска металла, что гарантирует идентичность всех приборов данной серии. Калибровки могут быть перенесены с одного прибора на другой и результаты будут абсолютно одинаковыми. Калибровка по всему используемому диапазону длин волн выполняется на образцах NIST (Национальный Институт Стандартов США).</p>
+					</div>
+					<div class="grid_6">
+						<p class="product_characters_val_title">Единая сеть</p>
+						<p class="product_characters_val_descr">При сортировке зерна важно иметь полный контроль над калибровками, использующимися в каждый отдельном приборе, чтобы иметь возможность контролировать работу практически в режиме реального времени. При использовании Ethernet, администрирование сети будет доступно 24 часа в сутки, независимо от расположения приборов. Большое количество анализаторов Инфраматик объединены и работают в сети во всем мире.</p>
+						<p class="product_characters_val_title top_20">Экспресс-анализ</p>
+						<p class="product_characters_val_descr">Короткое время анализа в сочетании с простой процедурой пробоподготовки, делает Инфраматик 9500 одним из самых быстрых БИК анализаторов цельного зерна на рынке.</p>
+					</div>
+					<div class="grid_6">
+						<p class="product_characters_val_title top_20">Простота в использовании</p>
+						<p class="product_characters_val_descr">Большой цветной сенсорный дисплей, с интуитивно понятным меню, позволяет легко и быстро приступить к работе, а также облегчает читаемость результатов анализа на расстоянии. Мы разработали интерфейс пользователя, чтобы сделать анализ быстрым и безопасным насколько это возможно. Всё что оператору нужно сделать, это выбрать какой тип зерна будет анализирован и высыпать его в воронку прибора. Никаких ручных настроек или изменений не требуется.</p>
+					</div>
+				</div>
+			</div>
+			<div class="product_characters_val open top_50">
+				<table>
+					<tr>
+						<td>Продукты</td>
+						<td>Зерно и масличные</td>
+					</tr>
+					<tr>
+						<td>Показатели</td>
+						<td>Влажность, протеин,масла, натура (опционально) и мн. др.</td>
+					</tr>
+					<tr>
+						<td>Время анализа</td>
+						<td>≈50 сек</td>
+					</tr>
+					<tr>
+						<td>Размер образца</td>
+						<td>400 мл (650 мл для определения натуры)</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>	
+	
+	<footer class="top_50">
+		<div class="container">
+			<div class="wrapper">
+				<div class="grid_3">
+					<p class="footer_block_title">Наш адрес</p>
+					<p class="footer_block_title_hr"></p>
+					<p class="footer_contacts_info">г. Москва, ул.Орджоникидзе 11, "Бизнес-парк Орджоникидзе 11", стр. 3, 3 этаж</p>
+				</div>
+				<div class="grid_3">
+					<p class="footer_block_title">Позвоните нам</p>
+					<p class="footer_block_title_hr"></p>
+					<a class="footer_contacts_info" href="tel:+74951111111">+7-(495)-111-11-11</a>
+				</div>
+				<div class="grid_3">
+					<p class="footer_block_title">Напишите нам</p>
+					<p class="footer_block_title_hr"></p>
+					<a class="footer_contacts_info" href="mailto:info@soctrade.com">info@soctrade.com</a>
+				</div>
+				<div class="grid_3">
+					<p class="footer_block_title">Мы в соцсетях</p>
+					<p class="footer_block_title_hr"></p>
+					<ul class="footer_social">
+						<li><a href="" target="_blank"><img src="img/vk_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/inst_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/fb_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/yb_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/tw_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/ok_icon.jpg"></a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<hr class="top_30"/>
+		<div class="container top_30">
+			<div class="wrapper">
+				<div class="grid_9">
+					<p>Все права защищены.</p>
+					<p>Вся информация носит справочный характер и не является публичной офертой (ст. 437 ГК)</p>
+				</div>
+				<div class="grid_3">
+					<p>Cайт разработан и поддерживается компанией <a href="rodzeta.ru" target="_blank">«Rodzeta»</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
