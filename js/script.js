@@ -112,7 +112,20 @@ $("body").on('click', '.zoom', (function(){	// Событие клика на м
 		  $(this).find('b').removeClass('down').addClass('up');
       }
   });
-
+  
+//Переключалка табов
+(function(s) {
+    var n;
+    s('.product_tabs').on('click', 'li:not(.active)', function() {
+        n = s(this).parents('.container'), s(this).dmtabs(n)
+    }), s.fn.dmtabs = function(n) {
+        s(this).addClass('active').siblings().removeClass('active'), n.find('.product_characters_val').eq(s(this).index()).show(1, function() {
+            s(this).addClass('open')
+        }).siblings('.product_characters_val').hide(1, function() {
+            s(this).removeClass('open')
+        })
+    }
+})(jQuery);
 
 //Обработка формы обратного звонка
 
