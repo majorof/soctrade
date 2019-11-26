@@ -582,7 +582,7 @@ nav>ul>li{margin: 0 10px;}
 .grid_11{width:662px;margin-right:20px;}
 .grid_12{width:728px;margin-right:20px;}
 
-.buter{background: rgba(0, 0, 0, 0) url(../img/buter.png) no-repeat scroll center center; height: 31px;position: fixed;right: 2%;text-indent: -5000px;top: 37px;width: 59px; cursor:pointer;z-index:10;}
+.buter{background: rgba(0, 0, 0, 0) url(../img/buter.png) no-repeat scroll center center; height: 31px;position: fixed;right: 2%;text-indent: -5000px;top: 37px;width: 59px; cursor:pointer;z-index:2;}
 
 .first_scrn_nav_mob_wrap{background:#fff none repeat scroll 0 0 / cover;height: 100%;overflow: hidden;position: fixed;width: 100%;z-index:999;display:table;}
 .first_scrn_nav_mob li {font-family: 'Open Sans', sans-serif;font-weight:400;font-size:21px;line-height:31px;margin-top:10px;}
