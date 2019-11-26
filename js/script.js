@@ -79,6 +79,15 @@ $('.feedbacks_slider_asis').slick({
       ]
 });
 
+//Адаптивные табы продукта
+$('.product_tabs').owlCarousel({
+	loop: false,
+	nav: true,
+	autoWidth:true,
+	mouseDrag: false,
+	donts: false
+});
+
 /*Увеличиваем фотки*/
 $("body").on('click', '.zoom', (function(){	// Событие клика на маленькое изображение
 	var img = $(this);	// Получаем изображение, на которое кликнули
@@ -116,16 +125,85 @@ $("body").on('click', '.zoom', (function(){	// Событие клика на м
 //Переключалка табов
 (function(s) {
     var n;
-    s('.product_tabs').on('click', 'li:not(.active)', function() {
-        n = s(this).parents('.container'), s(this).dmtabs(n)
+    s('.product_tabs').on('click', '.tab:not(.active)', function() {
+        n = s(this).parents('.container'), 
+		s(this).dmtabs(n)
     }), s.fn.dmtabs = function(n) {
-        s(this).addClass('active').siblings().removeClass('active'), n.find('.product_characters_val').eq(s(this).index()).show(1, function() {
+		
+		s('.tab').removeClass('active'),
+        s(this).addClass('active'), 
+        
+		n.find('.product_characters_val').eq(s(this).index('.tab')).show(1, function() {
             s(this).addClass('open')
         }).siblings('.product_characters_val').hide(1, function() {
             s(this).removeClass('open')
         })
     }
 })(jQuery);
+
+  
+$('.tab_w_childs>p').on('click',function() {
+  if($('.indexing').is(':visible')) {
+		$('.indexing').hide();
+		$('.product_tabs').css({'z-index' : '0'});
+  } else {
+		$('.indexing').show();
+		$('.product_tabs').css({'z-index' : '2'});
+  }
+});
+
+jQuery(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".indexing"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+			&& div.has(e.target).length === 0) { // и не по его дочерним элементам
+			div.fadeOut(); // скрываем его
+			$('.product_tabs').css({'z-index' : '0'});
+		}
+	});
+});
+
+//Видео
+var tag = document.createElement('script');
+tag.src = "http://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+
+onYouTubeIframeAPIReady = function () {
+    player = new YT.Player('player', {
+        videoId: 'Z3Qmy_EFSyo',  // youtube video id
+        playerVars: {
+            'autoplay': 0,
+            'rel': 0,
+            'showinfo': 0
+        },
+        events: {
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+var p = document.getElementById ("player");
+$(p).hide();
+
+var t = document.getElementById ("thumbnail");
+//t.src = "https://img.youtube.com/vi/Z3Qmy_EFSyo/0.jpg";
+t.src = "img/video_prew.jpg";
+
+onPlayerStateChange = function (event) {
+    if (event.data == YT.PlayerState.ENDED) {
+        $('.start-video').fadeIn('normal');
+    }
+}
+
+$(document).on('click', '.start-video', function () {
+    $(this).hide();
+    $("#player").show();
+    $("#thumbnail_container").hide();
+    player.playVideo();
+});
 
 //Обработка формы обратного звонка
 

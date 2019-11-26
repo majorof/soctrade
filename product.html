@@ -13,11 +13,13 @@
 
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
 </head>
@@ -143,13 +145,18 @@
 	
 	<section class="product_characters top_50">	
 		<div class="container">
-			<ul class="product_tabs">
-				<li class="active">Основная информация</li>
-				<li>Преимущества</li>
-				<li>Технические характеристики</li>
-				<li>Публикации и брошюры</li>
-				<li>Видео</li>
-				<li>Другое</li>
+			<ul class="product_tabs owl-carousel">
+				<li class="tab active"><p>Основная информация</p></li>
+				<li class="tab"><p>Преимущества</p></li>
+				<li class="tab"><p>Технические характеристики</p></li>
+				<li class="tab_w_childs"><p>Публикации и брошюры</p>
+					<ul class="indexing" style="display:none;">
+						<li class="tab"><p>Брошюры</p></li>
+						<li class="tab"><p>Статьи</p></li>
+					</ul>
+				</li>
+				<li class="tab"><p>Видео</p></li>
+				<li class="tab"><p>Другое</p></li>
 			</ul>
 			
 			<div class="product_characters_val open top_50">
@@ -181,7 +188,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="product_characters_val open top_50">
+			<div class="product_characters_val top_50">
 				<table>
 					<tr>
 						<td>Продукты</td>
@@ -200,6 +207,45 @@
 						<td>400 мл (650 мл для определения натуры)</td>
 					</tr>
 				</table>
+			</div>
+			
+			<div class="product_characters_val top_50">
+				<p class="product_characters_val_title">БРОШЮРЫ</p>
+				<table>
+					<tr>
+						<td>Brochure - Analysis solutions for flour milling</td>
+						<td><a href="">Скачать</a></td>
+					</tr>
+					<tr>
+						<td>Brochure - IM 9500 Customer Support Packages</td>
+						<td><a href="">Скачать</a></td>
+					</tr>
+					<tr>
+						<td>Brochure - Quality control solutions for the Pasta and Noodle industry</td>
+						<td><a href="">Скачать</a></td>
+					</tr>
+					<tr>
+						<td>Product Overview</td>
+						<td><a href="">Скачать</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="product_characters_val top_50">
+				<p class="product_characters_val_title">Статьи</p>
+			</div>
+			
+			<div class="product_characters_val top_50">
+				<div class="player_container">
+					<div id="player"></div>
+					<div id="thumbnail_container" class="thumbnail_container">
+						<img class="thumbnail" id="thumbnail" />
+					</div>
+					<a class="start-video"><img src="img/play_video.png" alt="" /></a>
+					<p class="product_characters_val_title">IM 9500 БИК анализатор зерна - обзор</p>
+				</div>
+			</div>
+			<div class="product_characters_val top_50">
+				<p class="product_characters_val_title">Другое</p>
 			</div>
 		</div>
 	</section>	
