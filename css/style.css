@@ -273,10 +273,13 @@ nav>ul li:hover .menu_dropdown li:hover a{color:#fff;}
 	
 	/*Breadcrumbs*/
 	.breadcrumbs ul{list-style:none;}
-	.breadcrumbs ul li{background:#51904e;border:1px solid #51904e;padding:5px 10px;display:inline-block;box-sizing:border-box;}
-	.breadcrumbs ul li.active{background:transparent;}
-	.breadcrumbs ul li a{font-family: 'Montserrat', sans-serif;font-size:16px;font-weight:400;color:#fff;text-decoration:none;text-align:center;display:block;}
-	.breadcrumbs ul li.active a{color:#252525;}
+	.breadcrumbs ul li{background:#cdf2cb;border:1px solid #cdf2cb;padding:5px 10px;display:inline-block;box-sizing:border-box;max-width:39%;position:relative;margin-right:-1px;}
+	.breadcrumbs ul li:before {content: "";position: absolute;right: -19px;top: -1px;z-index: 3;border-left: 15px solid #fff;border-top: 15px solid transparent;border-bottom: 15px solid transparent;transition: 0.3s ease;}
+	.breadcrumbs ul li:after {content: "";position: absolute;right: -16px;top: -1px;z-index: 4;border-left: 15px solid #cdf2cb;border-top: 15px solid transparent;border-bottom: 15px solid transparent;}
+	.breadcrumbs ul li a{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;padding-left:7px;}
+	.breadcrumbs ul li a{font-family: 'Montserrat', sans-serif;font-size:16px;font-weight:600;color:#51904e;text-decoration:none;text-align:center;display:block;text-transform:uppercase;}
+	.breadcrumbs ul li:first-child a{background:url(../img/home_icon_bc.png) center center no-repeat;height:19px;width:19px;}
+	.breadcrumbs ul li:last-child a{font-weight:400;}
 
 	/* --> Блок оборудования КАТАЛОГ*/
 	#catalog .main_equip_block h1 {color:#51904e;text-transform:uppercase;}
@@ -475,6 +478,8 @@ footer p, footer a{font-family: 'Montserrat', sans-serif;font-size:14px;font-wei
 nav>ul{width:1170px;}
 nav>ul>li{margin: 0 30px;}
 
+.breadcrumbs ul li{max-width:37%;}
+
 .main_slider .slide_wrap p, .main_slider .slide_wrap h1{left:47%;}
 
 .man_slider_asis{width:1040px;height:152px;}
@@ -533,6 +538,8 @@ nav>ul>li{margin: 0 10px;}
 
 #index .main_equip_block_val p {padding:30px;box-sizing: border-box;}
 #catalog .main_equip_block_val p {padding:30px;box-sizing: border-box;}
+
+.breadcrumbs ul li{max-width:34%;}
 
 .man_slider_asis{width:812px;height:152px;}
 
@@ -640,7 +647,7 @@ nav>ul>li>a{font-size:12px;}
 
 .manufacturers_block{width:97%;}
 
-.breadcrumbs ul li{width:30%;}
+.breadcrumbs ul li{max-width:30%;}
 .breadcrumbs ul li a{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 
 .manufacturer_cont .btn_invert_2, .manufacturer_cont .btn_black{width:250px;padding:10px;box-sizing:border-box;}
@@ -795,7 +802,7 @@ nav>ul>li>a{font-size:12px;}
 
 .footer_contacts_info{margin-bottom:20px;display:block;}
 
-.breadcrumbs ul li{width:30%;}
+.breadcrumbs ul li{max-width:25%;}
 .breadcrumbs ul li a{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 
 .manufacturer_cont .btn_invert_2, .manufacturer_cont .btn_black{width:100%;padding:10px;box-sizing:border-box;}
@@ -864,6 +871,7 @@ h5{font-family: 'Montserrat', sans-serif;font-weight:400;font-size:16px;text-ali
 #index .main_equip_block_val{height:auto;}
 #index .main_equip_block_val p{padding:10px;}
 
+#catalog .main_equip_block h1{font-size:27px !important;}
 #catalog .main_equip_block_val{height:auto;}
 #catalog .main_equip_block_val p{padding:10px;}
 
@@ -904,4 +912,6 @@ h5{font-family: 'Montserrat', sans-serif;font-weight:400;font-size:16px;text-ali
 
 .tab p, .tab_w_childs p{font-size:12px !important;line-height:18px !important;}
 .tab_w_childs .indexing p{line-height:40px !important;}
+
+.breadcrumbs ul li{max-width:23%;}
 }
