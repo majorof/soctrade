@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Главная - Soctrade</title>
@@ -17,9 +17,9 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
 
 </head>
 
@@ -48,7 +48,7 @@
 	<div id="call_back_popup_wrap" class="call_back_popup_wrap" style="display:none;">
 		<div class="call_back_popup_wrap_bg"></div>
 		<div class="call_back_popup">
-			<a id="call_back_popup_close" class="call_back_popup_close"></a>
+			<a class="call_back_popup_close"></a>
 			<p class="call_back_popup_title">Обратный звонок</p>
 			<p class="call_back_popup_descr">Оставьте заявку и наш специалист свяжется с Вами в ближайшее время. Спасибо!</p>
 			<form id="callbackform">
@@ -63,7 +63,7 @@
 	<div id="consalt_popup_wrap" class="call_back_popup_wrap" style="display:none;">
 		<div class="call_back_popup_wrap_bg"></div>
 		<div class="call_back_popup">
-			<a id="call_back_popup_close" class="call_back_popup_close"></a>
+			<a class="call_back_popup_close"></a>
 			<p class="call_back_popup_title">Заказать консультацию</p>
 			<p class="call_back_popup_descr">Оставьте заявку и наш специалист свяжется с Вами в ближайшее время. Спасибо!</p>
 			<form id="consaltform">
@@ -106,10 +106,10 @@
 				<li><a href="manufacturers.html">Производители</a></li>
 				<li><a href="service.html">Сервис</a>
 					<ul class="menu_dropdown">
-						<li><a href="">Общая информация</a></li>
-						<li><a href="">Услуги</a></li>
-						<li><a href="">Сотрудники</a></li>
-						<li><a href="">Контакты</a></li>
+						<li><a href="service_general_info.html">Общая информация</a></li>
+						<li><a href="service_attendance.html">Услуги</a></li>
+						<li><a href="service_staff.html">Сотрудники</a></li>
+						<li><a href="service_contacts.html">Контакты</a></li>
 					</ul>
 				</li>
 				<li><a href="products.html">Каталог продукции</a></li>
@@ -118,7 +118,7 @@
 		</nav>
 	</header>
 	
-	<section class="main_slider">
+	<div class="main_slider">
 		<div class="slider_asis">
 			<div>
 				<div class="slide_wrap">
@@ -151,9 +151,9 @@
 				</div>			
 			</div>
 		</div>
-	</section>
+	</div>
 	
-	<section class="main_equip_block top_50">
+	<div class="main_equip_block top_50">
 		<h1>ОБОРУДОВАНИЕ ПО ОБЛАСТЯМ</h1>
 		<div class="container">
 			<div class="wrapper">
@@ -201,15 +201,15 @@
 				</div>
 				<div class="grid_3">
 					<div class="main_equip_block_val">
-						<a href="#"><p><img src="img/main_equip_block_val_08.jpg" alt="" /></p>
+						<a href="#"><p><img src="img/main_equip_block_val_08.jpg" alt="" /></p></a>
 						<a href="#">Общелабораторное оборудование</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	
-	<section class="main_man_slider top_50">
+	<div class="main_man_slider top_50">
 		<h2>ПРОИЗВОДИТЕЛИ</h2>
 		<div class="man_slider_asis">
 			<div>
@@ -238,15 +238,15 @@
 				</div>			
 			</div>
 		</div>		
-	</section>
+	</div>
 	
-	<section class="question_or_problem_block top_50">
+	<div class="question_or_problem_block top_50">
 		<p class="question_or_problem_block_title">Возник вопрос или проблема?</p>
 		<p class="question_or_problem_block_description">Напишите нам или закажите звонок — мы обязательно найдём решение. Внимательно изучим ваши проблемы и задачи, и уже на их основе предложим вам варианты развития, которые будут подобраны именно под вашу цель.</p>
 		<a id="consalt_btn" class="btn_invert">Заказать консультацию</a>
-	</section>
+	</div>
 	
-	<section class="about_company_block top_50">
+	<div class="about_company_block top_50">
 		<h2>О КОМПАНИИ</h2>
 		<div class="container">
 			<div class="more_about_company_container">
@@ -268,8 +268,7 @@
 				</div>
 				<div class="more_about_company_descr top_50">
 					<h2>НАШИ ОБЪЕКТЫ</h2>
-					<div class="container top_50">
-						<div class="wrapper">
+						<div class="wrapper top_50">
 							<div class="grid_4">
 								<div class="main_object_pic_cont"><p><img src="img/main_object_01.jpg" alt="" /></p></div>
 								<div class="main_object_txt_cont">
@@ -292,54 +291,53 @@
 								</div>
 							</div>
 						</div>
-					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	
-	<section class="feedbacks top_50">
+	<div class="feedbacks top_50">
 		<h2>НАШИ ОТЗЫВЫ</h2>
 		<div class="feedbacks_slider_asis">
 			<div>
 				<div class="feedbacks_slide_wrap">
 					<hr />
-					<div class="feedbacks_slide_img_cont"><a class="zoom" name="img/otzyv_sitijenergo.jpg"><img src="img/feedback_01.jpg" alt="" /><p></p></a></div>
+					<div class="feedbacks_slide_img_cont"><p class="zoom" data-img="img/otzyv_sitijenergo.jpg"><img src="img/feedback_01.jpg" alt="" /><span></span></p></div>
 					<p>ОАО «СУ-7 РиТМ»</p>
 				</div>			
 			</div>
 			<div>
 				<div class="feedbacks_slide_wrap">
 					<hr />
-					<div class="feedbacks_slide_img_cont"><a class="zoom" name="img/otzyv_sitijenergo.jpg"><img src="img/feedback_02.jpg" alt="" /><p></p></a></div>
+					<div class="feedbacks_slide_img_cont"><p class="zoom" data-img="img/otzyv_sitijenergo.jpg"><img src="img/feedback_02.jpg" alt="" /><span></span></p></div>
 					<p>ООО «Ситиэнерго»</p>
 				</div>			
 			</div>
 			<div>
 				<div class="feedbacks_slide_wrap">
 					<hr />
-					<div class="feedbacks_slide_img_cont"><a class="zoom" name="img/otzyv_sitijenergo.jpg"><img src="img/feedback_03.jpg" alt="" /><p></p></a></div>
+					<div class="feedbacks_slide_img_cont"><p class="zoom" data-img="img/otzyv_sitijenergo.jpg"><img src="img/feedback_03.jpg" alt="" /><span></span></p></div>
 					<p>ОАО «СУ-7 РиТМ»</p>
 				</div>			
 			</div>
 			<div>
 				<div class="feedbacks_slide_wrap">
 					<hr />
-					<div class="feedbacks_slide_img_cont"><a class="zoom" name="img/otzyv_sitijenergo.jpg"><img src="img/feedback_01.jpg" alt="" /><p></p></a></div>
+					<div class="feedbacks_slide_img_cont"><p class="zoom" data-img="img/otzyv_sitijenergo.jpg"><img src="img/feedback_01.jpg" alt="" /><span></span></p></div>
 					<p>ОАО «СУ-7 РиТМ»</p>
 				</div>			
 			</div>
 			<div>
 				<div class="feedbacks_slide_wrap">
 					<hr />
-					<div class="feedbacks_slide_img_cont"><a class="zoom" name="img/otzyv_sitijenergo.jpg"><img src="img/feedback_02.jpg" alt="" /><p></p></a></div>
+					<div class="feedbacks_slide_img_cont"><p class="zoom" data-img="img/otzyv_sitijenergo.jpg"><img src="img/feedback_02.jpg" alt="" /><span></span></p></div>
 					<p>ОАО «СУ-7 РиТМ»</p>
 				</div>			
 			</div>
 		</div>			
-	</section>
+	</div>
 	
-	<section class="main_news top_50">
+	<div class="main_news top_50">
 		<h2>НОВОСТИ</h2>
 		<div class="container top_50">
 			<div class="flex_news_container_1lvl">
@@ -383,7 +381,7 @@
 			</div>
 		</div>
 		<a class="btn_invert_2" href="index.html">СМОТРЕТЬ ВСЕ</a>
-	</section>
+	</div>
 	
 	<footer class="top_50">
 		<div class="container">
@@ -407,12 +405,12 @@
 					<p class="footer_block_title">Мы в соцсетях</p>
 					<p class="footer_block_title_hr"></p>
 					<ul class="footer_social">
-						<li><a href="" target="_blank"><img src="img/vk_icon.jpg"></a></li>
-						<li><a href="" target="_blank"><img src="img/inst_icon.jpg"></a></li>
-						<li><a href="" target="_blank"><img src="img/fb_icon.jpg"></a></li>
-						<li><a href="" target="_blank"><img src="img/yb_icon.jpg"></a></li>
-						<li><a href="" target="_blank"><img src="img/tw_icon.jpg"></a></li>
-						<li><a href="" target="_blank"><img src="img/ok_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/vk_icon.jpg" alt="" /></a></li>
+						<li><a href="" target="_blank"><img src="img/inst_icon.jpg" alt=""></a></li>
+						<li><a href="" target="_blank"><img src="img/fb_icon.jpg" alt=""></a></li>
+						<li><a href="" target="_blank"><img src="img/yb_icon.jpg" alt=""></a></li>
+						<li><a href="" target="_blank"><img src="img/tw_icon.jpg" alt=""></a></li>
+						<li><a href="" target="_blank"><img src="img/ok_icon.jpg" alt=""></a></li>
 					</ul>
 				</div>
 			</div>

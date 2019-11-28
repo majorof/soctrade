@@ -49,6 +49,14 @@ $('.man_slider_asis').slick({
   autoplaySpeed: 7000,
   responsive: [
         {
+          breakpoint: 767,
+          settings: {
+			arrows: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
           breakpoint: 480,
           settings: {
 			arrows: false,
@@ -69,6 +77,14 @@ $('.feedbacks_slider_asis').slick({
   autoplaySpeed: 7000,
   responsive: [
         {
+          breakpoint: 767,
+          settings: {
+			arrows: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
           breakpoint: 480,
           settings: {
 			arrows: false,
@@ -88,25 +104,25 @@ $('.product_tabs').owlCarousel({
 	donts: false
 });
 
-/*Увеличиваем фотки*/
-$("body").on('click', '.zoom', (function(){	// Событие клика на маленькое изображение
+//Увеличиваем фотки
+$('body').on('click', '.zoom', (function(){	// Событие клика на маленькое изображение
 	var img = $(this);	// Получаем изображение, на которое кликнули
-	var src = img.attr('name'); // Достаем из этого изображения путь до картинки
-	$("body").append("<div class='zoom_popup'>"+ //Добавляем в тело документа разметку всплывающего окна
+	var src = img.data('img'); // Достаем из этого изображения путь до картинки
+	$('body').append("<div class='zoom_popup'>"+ //Добавляем в тело документа разметку всплывающего окна
 					 "<div class='zoom_popup_bg'></div>"+ // Блок, который будет служить фоном затемненным
 					 "<img src='"+src+"' class='zoom_popup_img' />"+ // Само увеличенное фото
 					 "</div>"); 
-	$(".zoom_popup").fadeIn(800); // Медленно выводим изображение
-	$(".zoom_popup_bg").click(function(){	// Событие клика на затемненный фон	   
+	$('.zoom_popup').fadeIn(800); // Медленно выводим изображение
+	$('.zoom_popup_bg').click(function(){	// Событие клика на затемненный фон	   
 		$(".zoom_popup").fadeOut(800);	// Медленно убираем всплывающее окно
 		setTimeout(function() {	// Выставляем таймер
-		  $(".zoom_popup").remove(); // Удаляем разметку всплывающего окна
+		  $('.zoom_popup').remove(); // Удаляем разметку всплывающего окна
 		}, 800);
 	});
-	$(".zoom_popup_img").click(function(){	// Событие клика на само фото
-		$(".zoom_popup").fadeOut(800);	// Медленно убираем всплывающее окно
+	$('.zoom_popup_img').click(function(){	// Событие клика на само фото
+		$('.zoom_popup').fadeOut(800);	// Медленно убираем всплывающее окно
 		setTimeout(function() {	// Выставляем таймер
-		  $(".zoom_popup").remove(); // Удаляем разметку всплывающего окна
+		  $('.zoom_popup').remove(); // Удаляем разметку всплывающего окна
 		}, 800);
 	});
 }));
@@ -163,47 +179,7 @@ jQuery(function($){
 	});
 });
 
-//Видео
-var tag = document.createElement('script');
-tag.src = "http://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var player;
-
-onYouTubeIframeAPIReady = function () {
-    player = new YT.Player('player', {
-        videoId: 'Z3Qmy_EFSyo',  // youtube video id
-        playerVars: {
-            'autoplay': 0,
-            'rel': 0,
-            'showinfo': 0
-        },
-        events: {
-            'onStateChange': onPlayerStateChange
-        }
-    });
-}
-
-var p = document.getElementById ("player");
-$(p).hide();
-
-var t = document.getElementById ("thumbnail");
-//t.src = "https://img.youtube.com/vi/Z3Qmy_EFSyo/0.jpg";
-t.src = "img/video_prew.jpg";
-
-onPlayerStateChange = function (event) {
-    if (event.data == YT.PlayerState.ENDED) {
-        $('.start-video').fadeIn('normal');
-    }
-}
-
-$(document).on('click', '.start-video', function () {
-    $(this).hide();
-    $("#player").show();
-    $("#thumbnail_container").hide();
-    player.playVideo();
-});
 
 //Обработка формы обратного звонка
 

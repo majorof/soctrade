@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Каталог - Soctrade</title>
@@ -17,9 +17,9 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
 
 </head>
 <body id="catalog">
@@ -48,7 +48,7 @@
 	<div id="call_back_popup_wrap" class="call_back_popup_wrap" style="display:none;">
 		<div class="call_back_popup_wrap_bg"></div>
 		<div class="call_back_popup">
-			<a id="call_back_popup_close" class="call_back_popup_close"></a>
+			<a class="call_back_popup_close"></a>
 			<p class="call_back_popup_title">Обратный звонок</p>
 			<p class="call_back_popup_descr">Оставьте заявку и наш специалист свяжется с Вами в ближайшее время. Спасибо!</p>
 			<form id="callbackform">
@@ -63,7 +63,7 @@
 	<div id="consalt_popup_wrap" class="call_back_popup_wrap" style="display:none;">
 		<div class="call_back_popup_wrap_bg"></div>
 		<div class="call_back_popup">
-			<a id="call_back_popup_close" class="call_back_popup_close"></a>
+			<a class="call_back_popup_close"></a>
 			<p class="call_back_popup_title">Заказать консультацию</p>
 			<p class="call_back_popup_descr">Оставьте заявку и наш специалист свяжется с Вами в ближайшее время. Спасибо!</p>
 			<form id="consaltform">
@@ -80,7 +80,7 @@
 	<header>
 		<div class="head">
 			<div class="logo">
-				<img src="img/logo.png" alt=""/>
+				<a href="index.html"><img src="img/logo.png" alt=""/></a>
 			</div>
 			<div class="logo_description">
 				<span>Лабораторное&nbsp;оборудование для&nbsp;контроля&nbsp;качества&nbsp;зерна,&nbsp;муки, кормов&nbsp;и&nbsp;пищевых&nbsp;продуктов</span>
@@ -106,10 +106,10 @@
 				<li><a href="manufacturers.html">Производители</a></li>
 				<li><a href="service.html">Сервис</a>
 					<ul class="menu_dropdown">
-						<li><a href="">Общая информация</a></li>
-						<li><a href="">Услуги</a></li>
-						<li><a href="">Сотрудники</a></li>
-						<li><a href="">Контакты</a></li>
+						<li><a href="service_general_info.html">Общая информация</a></li>
+						<li><a href="service_attendance.html">Услуги</a></li>
+						<li><a href="service_staff.html">Сотрудники</a></li>
+						<li><a href="service_contacts.html">Контакты</a></li>
 					</ul>
 				</li>
 				<li><a href="products.html">Каталог продукции</a></li>
@@ -118,7 +118,7 @@
 		</nav>
 	</header>
 	
-	<section class="breadcrumbs top_20">
+	<div class="breadcrumbs top_20">
 		<div class="container">
 			<ul>
 				<li><a href="index.html"></a></li>
@@ -127,9 +127,9 @@
 				<li><a>Для определения технологических свойств муки и реологических свойств теста</a></li>
 			</ul>
 		</div>
-	</section>
+	</div>
 	
-	<section class="main_equip_block top_50">
+	<div class="main_equip_block top_50">
 		<h1>Каталог Оборудования для анализа агропродукции</h1>
 		<div class="container">
 			<div class="wrapper">
@@ -177,15 +177,15 @@
 				</div>
 				<div class="grid_3">
 					<div class="main_equip_block_val">
-						<a href="#"><p><img src="img/catalog_equip_block_val_08.png" alt="" /></p>
+						<a href="#"><p><img src="img/catalog_equip_block_val_08.png" alt="" /></p></a>
 						<a href="#">Для определения содержания микотоксинов, ГМО</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	
-	<section class="main_man_slider top_50">
+	<div class="main_man_slider top_50">
 		<h2>ПРОИЗВОДИТЕЛИ</h2>
 		<div class="man_slider_asis">
 			<div>
@@ -214,35 +214,35 @@
 				</div>			
 			</div>
 		</div>		
-	</section>
+	</div>
 	
-	<section class="question_or_problem_block top_50">
+	<div class="question_or_problem_block top_50">
 		<p class="question_or_problem_block_title">Возник вопрос или проблема?</p>
 		<p class="question_or_problem_block_description">Напишите нам или закажите звонок — мы обязательно найдём решение. Внимательно изучим ваши проблемы и задачи, и уже на их основе предложим вам варианты развития, которые будут подобраны именно под вашу цель.</p>
 		<a id="consalt_btn" class="btn_invert">Заказать консультацию</a>
-	</section>
+	</div>
 	
-	<section class="more_about_equip top_50">
+	<div class="more_about_equip top_50">
 		<div class="container">
 			<div class="wrapper">
-				<div class="grid_6">
+				<div class="grid_6 top_20">
 					<p class="more_about_equip_block_title">Анализаторы с/х и пщевой продукции</p>
 					<hr />
 					<p class="more_about_equip_block_descr">Современный потребитель предъявляет высокие требования качесту производимой продукции. Плохая экология, большое количество пищевыхъ добавок, различные химические препараты для борьбы с вредителями культур не делают нашу пищу лучше. Чтобы быть конкурентоспособным, предпринимателю приходится тщательно проверять сырьё и конечный продукт, оборудовав собственные лаборатории для проведения анализов.</p>
 				</div>
-				<div class="grid_6">
+				<div class="grid_6 top_20">
 					<p class="more_about_equip_block_title">Виды анализаторов</p>
 					<hr />
 					<p class="more_about_equip_block_descr">Сейчас, когда в нашей стране ведётся активная внешнеэкономическая деятельность, промышленники заинтересованы выпускать продукты согласно международным стандартам. Анализаторы, поставляемые ООО «Лабреактив», просты в работе и точны в показателях. Они применяются для измерения качества зерна, мяса, молочной продукции, масел, овощей, фруктов, кормов для животных, вино-водочных изделей, муки, теста.</p>
 				</div>
 			</div>
-			<div class="wrapper hideshow top_20">
-				<div class="grid_6">
+			<div class="wrapper hideshow">
+				<div class="grid_6 top_20">
 					<p class="more_about_equip_block_title">Анализаторы с/х и пщевой продукции</p>
 					<hr />
 					<p class="more_about_equip_block_descr">Современный потребитель предъявляет высокие требования качесту производимой продукции. Плохая экология, большое количество пищевыхъ добавок, различные химические препараты для борьбы с вредителями культур не делают нашу пищу лучше. Чтобы быть конкурентоспособным, предпринимателю приходится тщательно проверять сырьё и конечный продукт, оборудовав собственные лаборатории для проведения анализов.</p>
 				</div>
-				<div class="grid_6">
+				<div class="grid_6 top_20">
 					<p class="more_about_equip_block_title">Виды анализаторов</p>
 					<hr />
 					<p class="more_about_equip_block_descr">Сейчас, когда в нашей стране ведётся активная внешнеэкономическая деятельность, промышленники заинтересованы выпускать продукты согласно международным стандартам. Анализаторы, поставляемые ООО «Лабреактив», просты в работе и точны в показателях. Они применяются для измерения качества зерна, мяса, молочной продукции, масел, овощей, фруктов, кормов для животных, вино-водочных изделей, муки, теста.</p>
@@ -254,7 +254,7 @@
 				<span class="more_about_company_title_arrow"><b class="down"></b></span></p>
 			</div>
 		</div>
-	</section>
+	</div>
 	
 	<footer class="top_50">
 		<div class="container">
@@ -278,12 +278,12 @@
 					<p class="footer_block_title">Мы в соцсетях</p>
 					<p class="footer_block_title_hr"></p>
 					<ul class="footer_social">
-						<li><a href="" target="_blank"><img src="img/vk_icon.jpg"></a></li>
-						<li><a href="" target="_blank"><img src="img/inst_icon.jpg"></a></li>
-						<li><a href="" target="_blank"><img src="img/fb_icon.jpg"></a></li>
-						<li><a href="" target="_blank"><img src="img/yb_icon.jpg"></a></li>
-						<li><a href="" target="_blank"><img src="img/tw_icon.jpg"></a></li>
-						<li><a href="" target="_blank"><img src="img/ok_icon.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="img/vk_icon.jpg" alt="" /></a></li>
+						<li><a href="" target="_blank"><img src="img/inst_icon.jpg" alt=""></a></li>
+						<li><a href="" target="_blank"><img src="img/fb_icon.jpg" alt=""></a></li>
+						<li><a href="" target="_blank"><img src="img/yb_icon.jpg" alt=""></a></li>
+						<li><a href="" target="_blank"><img src="img/tw_icon.jpg" alt=""></a></li>
+						<li><a href="" target="_blank"><img src="img/ok_icon.jpg" alt=""></a></li>
 					</ul>
 				</div>
 			</div>
