@@ -690,7 +690,6 @@ nav>ul>li>a{font-size:12px;}
 
 .manufacturer_cont .btn_invert_2, .manufacturer_cont .btn_black{width:250px;padding:10px;box-sizing:border-box;}
 
-.contacts_block.second_block>ul, .contacts_block.second_block>ul>li:first-child{width:100%;}
 .contacts_block>ul>li ul>li:first-child{display:none;}
 .contacts_block>ul>li ul>li:last-child{width:auto;}
 
