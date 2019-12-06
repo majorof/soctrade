@@ -204,7 +204,7 @@ nav>ul li:hover .menu_dropdown li:hover a{color:#fff;}
 }
 
 /*Блок оборудования на главной*/
-#index .main_equip_block_val {height:370px;margin-top:50px;}
+#index .main_equip_block_val {height:480px;margin-top:50px;}
 #index .main_equip_block_val p {text-align:center;height:270px;overflow:hidden;}
 #index .main_equip_block_val p img {width:auto;height:100%;}
 #index .main_equip_block_val a {display:block;text-align:center;font-family: 'Montserrat', sans-serif;font-size:calc( (100vw - 480px)/(1920 - 480) * (24 - 18) + 18px);font-weight:500;line-height:calc(( (100vw - 480px)/(1920 - 480) * (24 - 18) + 18px) * 1.5);color:#252525;text-decoration:none;padding:10px 0;}
